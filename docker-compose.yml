@@ -7,6 +7,6 @@ services:
   app_test:
     build:
       context: .
-      dockerfile: Dockerfile.test
+      dockerfile: Dockerfile
     links:
       - postgresql
