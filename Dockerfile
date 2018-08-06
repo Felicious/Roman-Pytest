@@ -1,8 +1,3 @@
-FROM python
+FROM python:3.6-onbuild
 
-# Application setup...
-
-COPY . /code/ # Copy source coude with all the tests.
-WORKDIR /code
-CMD py.test --junitxml=/data/test_report.xml \
-            --cov-report xml:/data/coverage.xml
+CMD ["python", "./db_helper.py"]

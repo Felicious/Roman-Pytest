@@ -1,12 +1,5 @@
-version: "2"
-services:
-
-  postgresql:
-    image: postgres
-
-  app_test:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    links:
-      - postgresql
+app:
+    build: .
+    volumes: 
+        - "$PWD:/usr/src/app"
+        - "$HOME:/home"
