@@ -1,3 +1,6 @@
-FROM python:3.6-onbuild
+FROM python
+
+COPY . /code/
+WORKDIR /code
 
 CMD ["python", "./db_helper.py"]
