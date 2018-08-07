@@ -1,0 +1,6 @@
+FROM python
+
+COPY . /code/
+WORKDIR /code
+
+CMD py.test --junitxml=/data/test_report.xml
