@@ -1,13 +1,8 @@
 version: "2"
 services:
 
-  postgresql:
-    image: postgres
-
   app_test:
     container_name: jenkins_app_test_1
     build:
       context: .
       dockerfile: Dockerfile.test
-    links:
-      - postgresql

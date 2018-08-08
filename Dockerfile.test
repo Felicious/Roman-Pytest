@@ -1,8 +1,6 @@
 FROM python
 
-ADD . /code/
+ADD . /code
 WORKDIR /code
 
 RUN pip install pytest
-
-CMD py.test --junitxml=/data/test_report.xml
