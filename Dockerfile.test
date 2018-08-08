@@ -1,6 +1,6 @@
 FROM python
 
-COPY . /code/
+ADD . /code/
 WORKDIR /code
 
 RUN pip install pytest

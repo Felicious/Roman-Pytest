@@ -10,3 +10,5 @@ services:
       dockerfile: Dockerfile.test
     links:
       - postgresql
+
+  container_name: jenkins_app_test_1
