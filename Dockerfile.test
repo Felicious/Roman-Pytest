@@ -5,6 +5,4 @@ WORKDIR /code
 
 RUN pip install pytest
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
-
 CMD py.test --junitxml=/data/test_report.xml
