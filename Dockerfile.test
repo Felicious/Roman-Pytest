@@ -1,7 +1,7 @@
 FROM python
 
-ADD . /code
-WORKDIR /code
+ADD db_helper.py
+ADD test.py
 
 RUN pip install pytest
 
