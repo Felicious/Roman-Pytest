@@ -5,4 +5,4 @@ ADD test.py .
 
 RUN pip install pytest
 
-CMD py.test --junitxml=/data/test_report.xml
+CMD py.test db_helper.py test.py --junitxml=/data/test_report.xml
