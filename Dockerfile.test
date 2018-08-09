@@ -1,7 +1,6 @@
 FROM python
 
-ADD db_helper.py .
-ADD test.py .
+COPY . .
 
 RUN pip install pytest
 
