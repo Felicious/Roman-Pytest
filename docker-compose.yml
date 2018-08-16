@@ -1,7 +1,0 @@
-app:
-    build: .
-    volumes: 
-        - "$PWD:/usr/src/app"
-        - "$HOME:/home"
-    
-    container_name: jenkinsbuild_app_test_1
