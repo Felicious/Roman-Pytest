@@ -31,3 +31,19 @@ def test_verify_create_user():
     result = db_helper.create_user(usr)
 
     assert expect == result
+	
+def verify_milk_tea_order():
+
+	expect = 'regular PMT'
+	
+	result = db_helper.get_milk_tea_order()
+	
+	assert expect == result
+	
+def get_wrong_PMT_order():
+
+	expect = 'Earl Grey MT'
+	
+	result = db_helper.get_milk_tea_order()
+	
+	assert expect != result
