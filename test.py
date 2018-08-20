@@ -47,3 +47,19 @@ def test_get_wrong_PMT_order():
 	result = db_helper.get_milk_tea_order()
 	
 	assert expect != result
+
+def test_get_wrong_MT_order():
+
+	expect = 'Earl Grey MT'
+	
+	result = db_helper.get_milk_tea_order()
+	
+	assert expect != result
+
+def test_wrong_MT_order():
+
+	expect = 'Earl Grey MT'
+	
+	result = db_helper.get_milk_tea_order()
+	
+	assert expect != result
