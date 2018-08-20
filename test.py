@@ -46,4 +46,4 @@ def get_wrong_PMT_order():
 	
 	result = db_helper.get_milk_tea_order()
 	
-	assert expect != result
+	assert expect == result
