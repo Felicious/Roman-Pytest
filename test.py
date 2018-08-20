@@ -32,7 +32,7 @@ def test_verify_create_user():
 
     assert expect == result
 	
-def verify_milk_tea_order():
+def test_verify_milk_tea_order():
 
 	expect = 'regular PMT'
 	
@@ -40,7 +40,7 @@ def verify_milk_tea_order():
 	
 	assert expect == result
 	
-def get_wrong_PMT_order():
+def test_get_wrong_PMT_order():
 
 	expect = 'Earl Grey MT'
 	
